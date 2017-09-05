@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Sesion5</string>
+    <string name="activity_main_name_hint">Ingrese su nombre</string>
+    <string name="activity_main_phone_hint">Ingrese su teléfono</string>
+    <string name="activity_main_clean">Limpiar</string>
+    <string name="activity_main_scholarship">Escolaridad</string>
+    <string name="activity_main_gender">Género</string>
+    <string name="activity_main_gender_female">Femenino</string>
+    <string name="activity_main_gender_male">Masculino</string>
+    <string-array name="activity_main_scholarship_list">
+        <item>Bachillerato</item>
+        <item>Técnico</item>
+        <item>Licenciatura</item>
+        <item>Maestría</item>
+        <item>Doctorado</item>
+    </string-array>
+    <string name="activity_main_favorite_book">Libro favorito</string>
+    <string-array name="books_array">
+        <item>Biblia</item>
+        <item>Don Quijote</item>
+        <item>El principito</item>
+        <item>El alquimista</item>
+        <item>El señor de los anillos</item>
+    </string-array>
+    <string name="activity_main_textCheckMark">Practica Deporte</string>
+</resources>

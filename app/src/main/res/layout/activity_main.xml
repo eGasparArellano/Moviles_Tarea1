@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iteso.desarrollo.sesion5.ActivityMain"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/activity_main_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/activity_main_name_hint"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/activity_main_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/activity_main_phone_hint"
+            android:inputType="phone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_scholarship"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size"/>
+
+        <Spinner
+            android:id="@+id/activity_main_scholarship"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/activity_main_scholarship_list">
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_gender"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size"/>
+
+        <RadioGroup
+            android:id="@+id/activity_main_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/activity_main_gender_female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/activity_main_gender_female"/>
+            <RadioButton
+                android:id="@+id/activity_main_male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/activity_main_gender_male"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_favorite_book"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/activity_main_books"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxLines="1"/>
+        <CheckedTextView
+            android:id="@+id/activity_main_sport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:checkMark="?android:attr/textCheckMark"
+            android:text="@string/activity_main_textCheckMark"
+            android:onClick="checked"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_main_clean"
+        android:onClick="confirmClean"/>
+</LinearLayout>
